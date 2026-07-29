@@ -44,10 +44,6 @@ My website is part workshop, part scrapbook. It is where engineering notes sit b
 
 <div align="center">
 
-**TypeScript whore. Lefty. Lesbian. She/her/hers.**  
-I would make your conservative grandma uncomfortable.  
-**I support Palestinian sovereignty.**
-
 </div>
 
 ## What is on the workbench
