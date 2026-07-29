@@ -38,8 +38,8 @@ My website is part workshop, part scrapbook. It is where engineering notes sit b
   <img src="./assets/pride-88x31.svg" width="88" height="31" alt="LGBTQ+ pride flag">
   <img src="./assets/lesbian-88x31.svg" width="88" height="31" alt="Lesbian pride flag">
   <img src="./assets/lefty-88x31.svg" width="88" height="31" alt="Politically left">
-  <img src="./assets/typescript-whore.svg" width="132" height="31" alt="TypeScript whore">
-  <img src="./assets/palestine-sovereignty.svg" width="250" height="31" alt="I support Palestinian sovereignty">
+  <img src="./assets/typescript-whore.svg" width="88" height="31" alt="TypeScript whore">
+  <img src="./assets/palestine-sovereignty.svg" width="88" height="31" alt="I support Palestinian sovereignty">
 </p>
 
 <div align="center">
