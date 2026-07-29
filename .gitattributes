@@ -1,0 +1,3 @@
+dist/** linguist-generated=true
+generated/** linguist-generated=true
+*.svg linguist-detectable=false

@@ -1,0 +1,70 @@
+name: Refresh profile artwork
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - README.md
+      - scripts/profile-art.mts
+      - scripts/node.d.ts
+      - package.json
+      - tsconfig.json
+      - .github/workflows/profile-art.yml
+  schedule:
+    - cron: "17 03 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-art
+  cancel-in-progress: true
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Check out profile source
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install compiler
+        run: npm install --no-package-lock
+
+      - name: Compile strict TypeScript
+        run: npm run build
+
+      - name: Render GitHub cards and contribution trace
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_LOGIN: ${{ github.repository_owner }}
+        run: npm run render
+
+      - name: Publish generated artwork
+        shell: bash
+        run: |
+          set -Eeuo pipefail
+
+          tmp="$(mktemp -d)"
+          cp -R generated/. "$tmp/"
+
+          git config user.name "kitty-crow[bot]"
+          git config user.email "141717449+kitty-crow@users.noreply.github.com"
+
+          git switch --orphan output
+          git rm -rf . 2>/dev/null || true
+          git clean -fdx
+          cp -R "$tmp"/. .
+          touch .nojekyll
+
+          git add .
+          git commit -m "!minor refresh profile artwork"
+          git push --force origin output

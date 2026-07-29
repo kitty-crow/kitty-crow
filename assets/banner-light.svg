@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="330" viewBox="0 0 1200 330" role="img">
+  <title>Kitty Crow, electronics engineer and systems builder</title>
+  <defs>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#80cbc4" stroke-width="1" opacity="0.35"/>
+    </pattern>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="330" rx="20" fill="#e8f8f5"/>
+  <rect width="1200" height="330" rx="20" fill="url(#grid)"/>
+  <rect x="28" y="26" width="1144" height="278" rx="16" fill="#ffffff" stroke="#80cbc4" stroke-width="2"/>
+  <rect x="28" y="26" width="1144" height="42" rx="16" fill="#e8f8f5"/>
+  <rect x="28" y="50" width="1144" height="18" fill="#e8f8f5"/>
+  <circle cx="52" cy="47" r="7" fill="#8f6ad9"/>
+  <circle cx="74" cy="47" r="7" fill="#00a8a8"/>
+  <circle cx="96" cy="47" r="7" fill="#01579b"/>
+  <text x="600" y="53" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" fill="#59706d">kitty@kittycrow.dev: ~/workshop</text>
+
+  <g transform="translate(68 92)">
+    <path d="M28 33 L48 4 L69 27 L118 27 L139 4 L159 33 L151 111 L37 111 Z" fill="#e8f8f5" stroke="#8f6ad9" stroke-width="5"/>
+    <path d="M61 63 h18 v18 H61z M113 63 h18 v18 h-18z" fill="#004d40"/>
+    <path d="M86 88 q10 12 20 0" fill="none" stroke="#004d40" stroke-width="5" stroke-linecap="round"/>
+    <path d="M18 67 H0 M21 82 H2 M169 67 h20 M166 82 h21" stroke="#00a8a8" stroke-width="4" stroke-linecap="round"/>
+    <path d="M91 72 h11 l-5 8z" fill="#8f6ad9"/>
+    <path d="M133 20 q28 10 35 36 q-19-10-35-7 q12-13 0-29z" fill="#01579b" opacity="0.9"/>
+    <rect x="42" y="119" width="111" height="8" rx="4" fill="#80cbc4"/>
+  </g>
+
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+    <text x="290" y="118" font-size="16" fill="#388e3c">kitty@kittycrow.dev:~$</text>
+    <text x="530" y="118" font-size="16" fill="#333333">whoami</text>
+    <text x="290" y="172" font-size="48" font-weight="700" fill="#004d40" filter="url(#glow)">Kitty Crow</text>
+    <text x="292" y="207" font-size="20" fill="#333333">Electronics Engineer · systems builder · TypeScript enthusiast</text>
+    <text x="290" y="248" font-size="16" fill="#388e3c">kitty@kittycrow.dev:~$</text>
+    <text x="530" y="248" font-size="16" fill="#333333">./build-something-unreasonable</text>
+    <text x="290" y="278" font-size="16" fill="#59706d">status:</text>
+    <text x="360" y="278" font-size="16" fill="#8f6ad9">somehow working</text>
+    <rect x="524" y="263" width="10" height="18" fill="#00a8a8">
+      <animate attributeName="opacity" values="1;1;0;0" dur="1s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+</svg>
