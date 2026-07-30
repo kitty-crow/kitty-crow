@@ -1,0 +1,42 @@
+name: Validate profile source
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - scripts/**
+      - dist/**
+      - package.json
+      - tsconfig.json
+      - .gitattributes
+      - .github/workflows/ci.yml
+      - .github/workflows/profile-art.yml
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  typecheck:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Check out profile source
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install compiler
+        run: npm install --no-package-lock
+
+      - name: Type-check and compile strict TypeScript
+        run: npm run validate
+
+      - name: Verify compiled artefact is current
+        run: git diff --exit-code -- dist/profile-art.mjs
