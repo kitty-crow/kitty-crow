@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="450" height="224" viewBox="0 0 450 224" role="img">
+  <style>
+    text { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
+    .title { font-size: 20px; font-weight: 700; fill: #004d40; }
+    .label { font-size: 13px; fill: #59706d; }
+    .value { font-size: 24px; font-weight: 700; fill: #333333; }
+    .small { font-size: 11px; fill: #59706d; }
+  </style>
+  <rect width="100%" height="100%" rx="14" fill="#ffffff"/>
+  <rect x="1" y="1" width="448" height="222" rx="13" fill="none" stroke="#80cbc4"/>
+  <rect x="0" y="0" width="450" height="34" rx="14" fill="#e8f8f5"/>
+  <rect x="0" y="20" width="450" height="14" fill="#e8f8f5"/>
+  <circle cx="18" cy="17" r="5" fill="#8f6ad9"/>
+  <circle cx="34" cy="17" r="5" fill="#33dede"/>
+  <circle cx="50" cy="17" r="5" fill="#00a8a8"/>
+  
+    <text class="title" x="24" y="63">active source languages</text>
+    <rect x="24" y="76" width="402" height="12" rx="3" fill="#e8f8f5"/>
+    <rect x="24.00" y="76" width="377.83" height="12" rx="3" fill="#00a8a8"/>
+<rect x="401.83" y="76" width="13.12" height="12" rx="3" fill="#8f6ad9"/>
+<rect x="414.95" y="76" width="4.75" height="12" rx="3" fill="#33dede"/>
+<rect x="419.70" y="76" width="4.00" height="12" rx="3" fill="#388e3c"/>
+<rect x="423.70" y="76" width="4.00" height="12" rx="3" fill="#2f81f7"/>
+<rect x="427.70" y="76" width="4.00" height="12" rx="3" fill="#d29922"/>
+<rect x="431.70" y="76" width="4.00" height="12" rx="3" fill="#f778ba"/>
+    <circle cx="29" cy="111" r="5" fill="#00a8a8"/>
+    <text class="label" x="41" y="116">TypeScript</text>
+    <text class="small" text-anchor="end" x="217" y="116">94.0%</text>
+<circle cx="244" cy="111" r="5" fill="#8f6ad9"/>
+    <text class="label" x="256" y="116">C++</text>
+    <text class="small" text-anchor="end" x="432" y="116">3.3%</text>
+<circle cx="29" cy="136" r="5" fill="#33dede"/>
+    <text class="label" x="41" y="141">C</text>
+    <text class="small" text-anchor="end" x="217" y="141">1.2%</text>
+<circle cx="244" cy="136" r="5" fill="#388e3c"/>
+    <text class="label" x="256" y="141">Shell</text>
+    <text class="small" text-anchor="end" x="432" y="141">0.8%</text>
+<circle cx="29" cy="161" r="5" fill="#2f81f7"/>
+    <text class="label" x="41" y="166">Python</text>
+    <text class="small" text-anchor="end" x="217" y="166">0.6%</text>
+<circle cx="244" cy="161" r="5" fill="#d29922"/>
+    <text class="label" x="256" y="166">PowerShell</text>
+    <text class="small" text-anchor="end" x="432" y="166">0.1%</text>
+<circle cx="29" cy="186" r="5" fill="#f778ba"/>
+    <text class="label" x="41" y="191">CMake</text>
+    <text class="small" text-anchor="end" x="217" y="191">0.0%</text>
+    <text class="small" x="24" y="209">active public repos · generated artefact-heavy repos excluded</text>
+  
+</svg>
